@@ -1,0 +1,8 @@
+.idea
+node_modules
+bower_components
+dist
+*.sublime-project
+*.cache
+needs
+*.sublime-workspace
