@@ -93,15 +93,15 @@ gulp.task('style:build', function () {
 // Create Spites
 
 gulp.task('sprite', function () {
-  var spriteData = gulp.src('src/sprites/icon/*.png').pipe(spritesmith({
-	imgName: 'sprite.png',
-	imgPath: '../img/sprites/sprite.png',
-	cssName: '_sprite.scss',
-	algorithm: 'top-down',
-	paddingg: 5
-  }));
-  spriteData.img.pipe(gulp.dest('./dist/img/sprites/'));
-  spriteData.css.pipe(gulp.dest('./src/style/components/'));
+	var spriteData = gulp.src('src/sprites/icon/*.png').pipe(spritesmith({
+		imgName: 'sprite.png',
+		imgPath: '../img/sprites/sprite.png',
+		cssName: '_sprite.scss',
+		algorithm: 'top-down',
+		paddingg: 5
+	}));
+	spriteData.img.pipe(gulp.dest('./dist/img/sprites/'));
+	spriteData.css.pipe(gulp.dest('./src/style/components/'));
 });
 
 
