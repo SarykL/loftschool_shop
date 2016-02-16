@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-html(lang="ru-RU")
-head
-	meta(charset="UTF-8")
-	meta(http-equiv='X-UA-Compatible', content='IE=edge')
-	meta(name='viewport', content='width=device-width, initial-scale=1')
-	link(rel="stylesheet", href="css/main.css")
-	title Cooltech
+extends templates/template
 
-body.page
-	.page-wrapper
-		include blocks/_header
-		.main-section.container
-			include blocks/_sidebar
-			.main-content
-				include blocks/_content-section
-	include blocks/_footer
+block title
+	| Каталог мобильных телефонов
+
+block content
+	.main-content
+		include blocks/_sidebar
+		section.product-catalog
+			include blocks/_catalog
+
+
