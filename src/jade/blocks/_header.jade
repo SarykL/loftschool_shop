@@ -1,9 +1,19 @@
 header.main-header
-	- var pageAttachment="main-header"
+	- var pagePosition="main-header"
 	.main-header__top
-		.main-header__top-container
-			include ../elements/_social
-			include ../elements/_address
+		.main-header__top.container
+			include _social
+			include _address
 	.main-header__middle
-		.main-header__middle-container
-			
+		.main-header__middle.container
+			.main-header__logo
+				- var pagePosition="main-header"
+				include _logo
+			.main-header__search
+				include _search
+			.main-header__menu
+				include _menu
+	.main-header__bottom
+		.main-header__bottom.container
+			.main-header__navigation
+				include _navigation
