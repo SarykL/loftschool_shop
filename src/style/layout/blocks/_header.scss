@@ -1,0 +1,51 @@
+/*=============================================
+=            Header styles section            =
+=============================================*/
+
+.main-header {
+	margin-bottom: 34px;
+	&__top, &__bottom {
+		vertical-align: middle;
+		&_container {
+			@extend .container;
+			@include clearfix;
+		}
+		background-color: #fff;
+		box-shadow: 0 2px 0 #ebedef;
+	}
+}
+
+.main-header__top_container {
+	vertical-align: middle;
+	min-height: 70px;
+}
+
+.main-header__social {
+	margin: 0;
+	float: left;
+	vertical-align: middle;
+	list-style: none;
+}
+
+.social {
+	&__item {
+		display: inline-block;
+	}
+	&__link {
+		display: block;
+		text-indent: -99999px;
+	}
+}
+
+.address {
+	float: right;
+	vertical-align: middle;
+	font-size: 14px;
+	&__location {
+		display: inline-block;
+	}
+}
+
+/*=====  End of Header styles section  ======*/
+
+

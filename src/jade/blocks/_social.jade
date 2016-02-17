@@ -4,6 +4,6 @@ case pagePosition
 - var socialItemList = ['fb', 'vk', 'tw']
 ul(class=pagePosition + "__social")
 	each socialItem in socialItemList
-		li(class="social__item_" + iconColor) 
+		li(class="social__item social__item_" + iconColor) 
 			//- href из массива ?
 			a(href="#", target="_blank", class="social__link" + " social__link_" + iconColor + "-" + socialItem)= socialItem

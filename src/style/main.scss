@@ -9,15 +9,15 @@
 // 2. Base stuff
 
 @import
-	'base/base',
-	'base/fonts',
 	'base/normalize',
+	'base/fonts',
+	'base/base',
 	'base/typography';
 
 // 3. Layout
 
 @import
-	'layout/header';
+	'layout/blocks/header';
 
 // 4. Components
 

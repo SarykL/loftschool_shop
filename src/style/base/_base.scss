@@ -1,3 +1,40 @@
+/*===========================================
+=            Base styles section            =
+===========================================*/
+
+html, body {
+	height: 100%;
+}
+
 .page {
 	background: #f4f4f4;
 }
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	// margin-bottom: -60px;	// Высота футера
+	&:after {
+		content: "";
+		display: block;
+	}
+}
+
+.footer, wrapper:after {
+	// height: 60px;	// Выоста футера
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+// Hide logo text
+.logo__text {
+	position: absolute;
+	top: 0;
+	left: -99999px;
+}
+
+/*=====  End of Base styles section  ======*/
+

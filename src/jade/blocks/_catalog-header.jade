@@ -1,0 +1,17 @@
+.catalog-header
+	form.catalog-sorting
+		label(for="sortBy").catalog-sorting__label
+			| Сортировать по
+		select(name="sortBy").catalog-sorting__select
+			- var optionItemList = ['цене', 'популярности', 'производителю']
+			each optionItem in optionItemList
+				option(value="")= optionItem
+	.catalog-view
+		span.catalog-view__title
+			| Вид каталога
+		ul.catalog-view__list
+			- var viewItemList = ['rows', 'thumbnails', 'list']
+			each viewItem in viewItemList
+				li(class="catalog-view-item catalog-view_" + viewItem)
+					a(href="#", class="catalog-view-link_" + viewItem)
+
