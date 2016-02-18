@@ -4,9 +4,11 @@ block title
 	| Каталог мобильных телефонов
 
 block content
-	.main-content
-		h2.section-title
-			| Мобильные телефоны
+	.main-content_container
+		.main-content-header
+			include blocks/_breadcrumbs
+			h2.section-title
+				| Мобильные телефоны
 		include blocks/_sidebar
 		section.product-catalog
 			include blocks/_catalog

@@ -48,16 +48,20 @@ $font-size-h6: ceil(($font-size-regular * 0.85)) !default;
 
 // Typography
 
-$text-color: #727070 !default;
-$link-color: #727070 !default;
-$link-hover-color: lighten($link-color, 20%) !default;
+$text-color: #333 !default;
+$link-color: #333 !default;
+$link-hover-color: #f60 !default;
 
 
 
-$primary-color: #48bfa1 !default;
-$primary-color-light: lighten($primary-color, 20%) !default;
-$primary-color-dark: darken($primary-color, 20%) !default;
+$primary-orange: #f60 !default;
+$primary-orange-light: lighten($primary-orange, 5%) !default;
+$primary-orange-dark: darken($primary-orange, 20%) !default;
 
-$secondary-color: #e4ba68 !default;
-$secondary-color-light: lighten($secondary-color, 20%) !default;
-$secondary-color-dark: darken($secondary-color, 20%) !default;
+$primary-white: #fff !default;
+$primary-white-light: lighten($primary-white, 20%) !default;
+$primary-white-dark: #fbfbfb !default;
+
+$primary-grey: #e7e7e7 !default;
+$primary-grey-light: lighten($primary-grey, 20%) !default;
+$primary-grey-dark: darken($primary-grey, 20%) !default;

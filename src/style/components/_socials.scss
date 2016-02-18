@@ -1,0 +1,16 @@
+.main-header__social {
+	margin: 0;
+	float: left;
+	vertical-align: middle;
+	list-style: none;
+}
+
+.social {
+	&__item {
+		display: inline-block;
+	}
+	&__link {
+		display: block;
+		text-indent: -99999px;
+	}
+}

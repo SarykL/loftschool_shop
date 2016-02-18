@@ -17,12 +17,19 @@
 // 3. Layout
 
 @import
-	'layout/blocks/header';
+	'layout/blocks/header',
+	'layout/blocks/main-content';
 
 // 4. Components
 
 @import
-	'components/buttons';
+	'components/address',
+	'components/buttons',
+	'components/search',
+	'components/socials',
+	'components/navigation',
+	'components/menu',
+	'components/logo';
 
 // 5. Vendors
 

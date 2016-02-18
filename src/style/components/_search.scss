@@ -1,0 +1,28 @@
+.search {
+	float: left;
+	margin-left: 57px;
+	height: 36px;
+	&__request {
+		background-color: $primary-white-dark;
+		border: 1px solid #dee1e4;
+		border-radius: 5px 0 0 5px;
+		line-height: 36px;
+		height: 36px;
+		width: 288px;
+		outline: none;
+		padding-left: 18px;
+	}
+	&__btn {
+		width: 78px;
+		height: 36px;
+		background: $primary-orange;
+		color: $primary-white;
+		outline: none;
+		border: none;
+		border-radius: 0 5px 5px 0;
+		margin-left: -6px;
+		&:hover {
+			background: $primary-orange-light;
+		}
+	}
+}

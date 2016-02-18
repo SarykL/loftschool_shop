@@ -1,0 +1,22 @@
+.menu {
+	float: right;
+	margin: 0;
+	padding: 0;
+	&__item {
+		display: inline-block;
+		margin-left: 30px;
+		margin-top: 9px;
+		&:first-child {
+			margin-left: 10px;
+		}
+	}
+	&-link {
+		font-size: 16px;
+		font-family: $font-family-semibold;
+		line-height: 18px;
+		color: $link-color;
+		&:hover {
+			color: $primary-orange;
+		}
+	}
+}
