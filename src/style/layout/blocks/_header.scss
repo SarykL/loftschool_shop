@@ -16,6 +16,7 @@
 }
 
 /*----------  Top header  ----------*/
+
 .main-header__top_container {
 	min-height: 77px;
 	line-height: 77px;
@@ -54,9 +55,11 @@
 		text-decoration: none;
 	}
 }
+
 /*----------  End top header  ----------*/
 
 /*----------  Middle header  ----------*/
+
 .main-header__middle_container {
 	@extend .container;
 	@include clearfix;
@@ -66,7 +69,6 @@
 	margin: auto;
 	padding-top: 30px;
 }
-
 .logo {
 	float: left;
 	&__img {
@@ -113,17 +115,23 @@
 	}
 	&__link {
 		font-size: 16px;
-		font-family: $font-family-bold;
+		font-family: $font-family-semibold;
 		line-height: 18px;
+		color: #333;
+		&:hover {
+			color: #f60;
+		}
 	}
 }
 /*----------  End middle header  ----------*/
 
 /*----------  Bottom header  ----------*/
+
 .main-header__bottom_container {
 	min-height: 52px;
 	line-height: 52px;
 }
+
 .nav-list {
 	list-style: none;
 	margin: 0;
@@ -134,10 +142,17 @@
 	&-link {
 		display: block;
 		font-size: 16px;
-		padding: 0 15px;
+		padding: 0 13px;
 		font-family: $font-family-regular;
+		text-decoration: none;
+		color: #333;
 		&:hover {
 			background: #e6e3e3;
+		}
+		&_active {
+			background: #f60;                  // Primary orange
+			color: #fff;
+			font-family: $font-family-semibold;
 		}
 	}
 }
