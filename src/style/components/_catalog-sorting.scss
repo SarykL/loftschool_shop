@@ -1,0 +1,56 @@
+.catalog-sorting {
+	border: 1px solid #dee2e5;
+	background: #e2ecef;
+	border-radius: 5px;
+	@include clearfix;
+	// height: 53px;
+	line-height: 53px;
+	&-form {
+		float: left;
+	}
+}
+
+.catalog-sorting-form {
+	margin-left: 20px;
+	&__label {
+		font-style: 14px;
+		font-family: $font-family-regular;
+		color: #5d656c;
+		line-height: 20px;
+	}
+	&__select {
+		min-width: 145px;
+		font-style: 14px;
+		font-family: $font-family-regular;
+		color: #7f7f7f;
+		line-height: 27px;
+		background-color: white;
+		border: 1px solid #ebedef;
+		border-radius: 3px;
+		padding-left: 14px;
+		margin-left: 10px;
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.43);
+	}
+}
+
+.catalog-view {
+	float: right;
+	&__list{
+		float: right;
+	}
+	&-item {
+		display: inline-block;
+		position: relative;
+		height: 50px;
+		width: 50px;
+		text-align: center;
+	}
+	&__title {
+		font-family: $font-family-regular;
+		color: #5d656c;
+		margin-right: 17px;
+	}
+	&-link {
+
+	}
+}

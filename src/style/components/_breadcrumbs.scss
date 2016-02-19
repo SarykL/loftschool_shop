@@ -1,0 +1,27 @@
+.breadcrumbs {
+	&-list {
+		&__item {
+			display: inline-block;
+			font-size: 14px;
+			font-family: $font-family-regular;
+			&:first-child {
+				&:before {
+					content: '';
+				}
+			}
+			&:before {
+				content: ' > ';
+			}
+		}
+		&-link {
+			font-size: 14px;
+			color: $link-color;
+			font-family: $font-family-regular;
+			text-decoration: none;
+			&:hover {
+				color: $link-hover-color;
+				text-decoration: underline;
+			}
+		}
+	}
+}
