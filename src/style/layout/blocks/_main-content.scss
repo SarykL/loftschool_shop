@@ -1,5 +1,16 @@
 .main-content {
 	&_container {
 		@extend .container;
+		@include clearfix;
 	}
+}
+.section-title {
+	font-size: 20px;
+	font-family: $font-family-bold;
+	margin-bottom: 40px;
+}
+
+.product-catalog {
+	float: right;
+	width: 743px;
 }

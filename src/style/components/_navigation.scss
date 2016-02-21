@@ -19,7 +19,7 @@
 		&:hover {
 			background: #e6e3e3;
 		}
-		&_active {
+		&.active {
 			background: $primary-orange;
 			color: $primary-white;
 			font-family: $font-family-semibold;

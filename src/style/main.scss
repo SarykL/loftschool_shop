@@ -18,6 +18,7 @@
 
 @import
 	'layout/blocks/header',
+	'layout/blocks/sidebar',
 	'layout/blocks/main-content';
 
 // 4. Components
@@ -26,10 +27,13 @@
 	'components/address',
 	'components/buttons',
 	'components/breadcrumbs',
+	'components/catalog',
 	'components/catalog-sorting',
+	'components/filter',
 	'components/logo',
 	'components/menu',
 	'components/navigation',
+	'components/segments',
 	'components/search',
 	'components/socials';
 

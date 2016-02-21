@@ -28,7 +28,7 @@ var path = {
 		style: 'src/style/main.scss',
 		img: 'src/img/**/*.*',
 		fonts: 'src/fonts/**/*.*',
-		js: 'src/js/**/*.*'
+		js: 'src/js/*.js'
 	},
 	watch: {
 		jade: 'src/**/*.jade',

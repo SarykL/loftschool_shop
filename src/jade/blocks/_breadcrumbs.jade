@@ -3,4 +3,4 @@
 		- var breadcrumbsItemList = ['Главная', 'Каталог']
 		each breadcrumbsItem in breadcrumbsItemList
 			li.breadcrumbs-list__item
-				a(href='#' class="breadcrumbs-list-link breadcrumbs-list-link_"+ ((breadcrumbsItem == "Главная") ? 'active' : ''))= breadcrumbsItem
+				a(href='#').breadcrumbs-list-link= breadcrumbsItem

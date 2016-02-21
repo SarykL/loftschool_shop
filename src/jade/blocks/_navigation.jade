@@ -2,4 +2,4 @@
 ul.nav-list
 	each navItem in navItemList
 		li.nav-list__item
-			a(href="#" class="nav-list-link nav-list-link_"+ ((navItem == "Мобильные телефоны") ? 'active' : ''))= navItem
+			a(href="#" class="nav-list-link"+ ((navItem == "Мобильные телефоны") ? ' active' : ''))= navItem

@@ -1,0 +1,6 @@
+.segments
+	ul.segments-list
+		-var segmentsItemList = ['Флагманы','Бюджетная линейка']
+		each segmentsItem in segmentsItemList
+			li.segments-list__item
+				a(href="#" class="segments-list-link"+ ((segmentsItem == "Бюджетная линейка") ? ' active' : ''))= segmentsItem

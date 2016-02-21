@@ -1,0 +1,40 @@
+.products-item
+	.products__item-inner
+		.products__left
+			.products__slideshow
+			.products__slideshow-block
+				//- a(href="#").products__slideshow-display
+				//- img(src="http://lorempixel.com/200/200/technics/1", alt="").products__slideshow-image
+				//- ul.products__slideshow-tumbs
+				//- - for (var x = 0; x <3; x++)
+				//- 	li.products__slideshow-item
+				//- 	a(href="#").products__slideshow-link
+				//- 		img(src="http://lorempixel.com/45/45/technics/" + x, alt="").products__slideshow-tumbs-image
+			.products__article
+				.products__article-word Артикул
+				.products__article-num 123216
+			.products__description-title Microsoft Lumia 640 RM-1077
+			.products__description-text Вместе с новой Microsoft Lumia 640 Dual SIM (RM-1077) вы открываете мир ярких цифровых возможностей. Этот многофункциональный смартфон уже содержит набор бесплатных сервисов Microsoft... 
+			ul.products__options
+				- var options = {'Тип SIM-карты':'Micro-SIM', 'Количество SIM-карт':'1','Цвет':'Белый','OS':'Android','Связь 3G':'Есть','4G (LTE)':'Нет','GPS-модуль':'Есть'}
+				- var index = 1
+				- for (item in options)
+				li(class="products__option-item" + ((index++ % 2) ? ' products__option-item_gray' : ''))
+					.products__option-key= item
+					.products__option-value= options[item]
+			.products__rating
+				ul.products__rating-stars
+				li.products__rating-stars-item.products__rating-stars-item_filled
+				li.products__rating-stars-item.products__rating-stars-item_filled
+				li.products__rating-stars-item.products__rating-stars-item_empty
+				li.products__rating-stars-item.products__rating-stars-item_empty
+				li.products__rating-stars-item.products__rating-stars-item_empty
+				.products__rating-amount 2
+		.products__right
+			.products__info
+			.products__price 11 290
+				i.rub
+			.products__info-bottom
+			a(href="#").products__buy-button В корзину
+			.products__availability
+				| В наличии

@@ -3,8 +3,8 @@
 	background: #e2ecef;
 	border-radius: 5px;
 	@include clearfix;
-	// height: 53px;
 	line-height: 53px;
+	margin-bottom: 40px;
 	&-form {
 		float: left;
 	}
@@ -13,14 +13,14 @@
 .catalog-sorting-form {
 	margin-left: 20px;
 	&__label {
-		font-style: 14px;
+		font-size: 14px;
 		font-family: $font-family-regular;
 		color: #5d656c;
 		line-height: 20px;
 	}
 	&__select {
 		min-width: 145px;
-		font-style: 14px;
+		font-size: 14px;
 		font-family: $font-family-regular;
 		color: #7f7f7f;
 		line-height: 27px;
@@ -47,6 +47,7 @@
 	}
 	&__title {
 		font-family: $font-family-regular;
+		font-size: 14px;
 		color: #5d656c;
 		margin-right: 17px;
 	}
