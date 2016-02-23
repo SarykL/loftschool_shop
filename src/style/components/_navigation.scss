@@ -1,31 +1,66 @@
 /*----------  Navigation block styles  ----------*/
 
-.nav-list {
-	list-style: none;
-	font-size: 0px;
-	margin: 0;
-	padding: 0;
-	&__item {
-		display: inline-block;
-	}
-	&-link {
-		display: block;
-		line-height: 52px;
-		font-size: 16px;
-		padding: 0 15px;
-		font-family: $font-family-regular;
-		text-decoration: none;
-		color: $link-color;
-		&:hover {
-			background: #e6e3e3;
+.main-header {
+
+	& .nav-list {
+		list-style: none;
+		font-size: 0px;
+		margin: 0;
+		padding: 0;
+
+		&__item {
+			display: inline-block;
 		}
-		&.active {
-			background: $primary-orange;
-			color: $primary-white;
-			font-family: $font-family-semibold;
+
+		&-link {
+			display: block;
+			line-height: 52px;
+			font-size: 16px;
+			padding: 0 15px;
+			font-family: $font-family-regular;
+			text-decoration: none;
+			color: $link-color;
+
 			&:hover {
-				background: $primary-orange-light;
+				background: #e6e3e3;
+			}
+
+			&.active {
+				background: $primary-orange;
+				color: $primary-white;
+				font-family: $font-family-semibold;
+				
+				&:hover {
+					background: $primary-orange-light;
+				}
 			}
 		}
+	}
+}
+
+.footer {
+	& .nav-list {
+		list-style: none;
+		max-width: 550px;
+		text-align: right;
+
+		&__item {
+			display: inline-block;
+		}
+
+		&-link {
+			font-family: $font-family-regular;
+			text-decoration: underline;
+			color: $primary-white;
+			font-size: 14px;
+			margin-left: 22px;
+			line-height: 35px;
+
+			&:hover {
+				color: $link-hover-color;
+			}
+		}
+		
+
 	}
 }

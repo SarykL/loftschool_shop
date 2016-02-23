@@ -25,7 +25,7 @@ address {
 .wrapper {
 	position: relative;
 	min-height: 100%;
-	// margin-bottom: -60px;	// Высота футера
+	// margin-bottom: -222px;	// Высота футера
 	&:after {
 		content: "";
 		display: block;
@@ -33,7 +33,7 @@ address {
 }
 
 .footer, wrapper:after {
-	// height: 60px;	// Выоста футера
+	height: 222px;	// Выоста футера
 }
 
 .container {
