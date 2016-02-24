@@ -4,62 +4,40 @@
 			a(href="#").filter-list-item__trigger Наличие в магазинах
 			ul.filter-list-item__inner-list
 				li.filter-list-item__inner-list-item
-					input.radio-input2(type='radio', name='shops', id='all-shops')
-					label.radio-label2 Во всех магазинах
-						//- .filter__choose-elem
-						//- .filter__choose-text Во всех магазинах
+					input.radio-input(type='radio', name='shops', id='all-shops')
+					label(for="all-shops").radio-label Во всех магазинах
 				li.filter-list-item__inner-list-item
-					label.radio-label
-						input.radio-input(type='radio', name='shops', id='all-shops')
-						.filter__choose-elem
-						.filter__choose-text Во всех магазинах
-				li.filter-list-item__inner-list-item
-					label.radio-label
-						input.radio-input(type='radio', name='shops', id='closest-shop')
-						.filter__choose-elem
-						.filter__choose-text В ближайшем ко мне магазине
+					input.radio-input(type='radio', name='shops', id='closest-shop')
+					label(for="closest-shop").radio-label В ближайшем ко мне магазине
 		li.filter-list-item
 			a(href="#").filter-list-item__trigger Бренды
 			form(id='brands-form').filter-list-item__inner-list
 				ul.inner-list
 					li.filter-list-item__inner-list-item
-						label.checkbox-label
-							input.checkbox-input(type='checkbox', name='brands', id='lenovo')
-							.filter__choose-elem-checkbox
-							.filter__choose-text Lenovo
+						input(type='checkbox', name='brands', id='lenovo').checkbox-input
+						label(for="lenovo").checkbox-label Lenovo
 					li.filter-list-item__inner-list-item
-						label.checkbox-label
-							input.checkbox-input(type='checkbox', name='brands', id='apple')
-							.filter__choose-elem-checkbox
-							.filter__choose-text Apple
+						input.checkbox-input(type='checkbox', name='brands', id='apple')
+						label(for="apple").checkbox-label Apple
 					li.filter-list-item__inner-list-item
-						label.checkbox-label
-							input.checkbox-input(type='checkbox', name='brands', id='samsung')
-							.filter__choose-elem-checkbox
-							.filter__choose-text Samsung
+						input.checkbox-input(type='checkbox', name='brands', id='samsung')
+						label(for="samsung").checkbox-label Samsung
 					li.filter-list-item__inner-list-item
-						label.checkbox-label
-							input.checkbox-input(type='checkbox', name='brands', id='asus')
-							.filter__choose-elem-checkbox
-							.filter__choose-text Asus
+						input.checkbox-input(type='checkbox', name='brands', id='asus')
+						label(for="asus").checkbox-label Asus
 					li.filter-list-item__inner-list-item
-						label.checkbox-label
-							input.checkbox-input(type='checkbox', name='brands', id='motorola')
-							.filter__choose-elem-checkbox
-							.filter__choose-text Motorola
+						input.checkbox-input(type='checkbox', name='brands', id='motorola')
+						label(for="motorola").checkbox-label Motorola
 				.clear-checkbox 
 					input.clear-checkbox-link(type='reset', value='Сбросить фильтр')
 		li.filter-list-item
 			a(href="#").filter-list-item__trigger Цена
-			.range-slider.filter-list-item__inner-list
-				.range-slider__wrap-fields
-					.range-slider__wrap-elem
-						span.left
-							span.range-slider__text от
-							input.range-slider__input.range-slider__input-start(type='text', value='0')
-						span.right
-							span.range-slider__text до
-							input.range-slider__input.range-slider__input-end(type='text', value='25000' id="slider-range")
+			.range-slider-wrapper.filter-list-item__inner-list
+				label.range-slider__text от
+				input.range-slider__input.range-slider__input-start(type='text', value='0')
+				label.range-slider__text до
+				input.range-slider__input.range-slider__input-end(type='text', value='25000')
+				.slider-range#slider-range
 		li.filter-list-item
 			a(href="").filter-list-item__trigger Цвета
 			ul.color-box-cont.filter-list-item__inner-list
@@ -72,29 +50,19 @@
 			form.filter-list-item__inner-list
 				ul.inner-list
 					li.filter-list-item__inner-list-item
-						label.checkbox-label
-							input.checkbox-input(type='checkbox', name='os', id='android')
-							.filter__choose-elem-checkbox
-							.filter__choose-text Android
+						input.checkbox-input(type='checkbox', name='os', id='android')
+						label(for="android").checkbox-label Android							
 					li.filter-list-item__inner-list-item
-						label.checkbox-label
-							input.checkbox-input(type='checkbox', name='os', id='iOS')
-							.filter__choose-elem-checkbox
-							.filter__choose-text iOS
+						input.checkbox-input(type='checkbox', name='os', id='iOS')
+						label(for="iOS").checkbox-label iOS							
 					li.filter-list-item__inner-list-item
-						label.checkbox-label
-							input.checkbox-input(type='checkbox', name='os', id='windowsmob')
-							.filter__choose-elem-checkbox
-							.filter__choose-text Windows Mobile
+						input.checkbox-input(type='checkbox', name='os', id='windowsmob')
+						label(for="windowsmob").checkbox-label Windows Mobile
 					li.filter-list-item__inner-list-item
-						label.checkbox-label
-							input.checkbox-input(type='checkbox', name='os', id='symbian')
-							.filter__choose-elem-checkbox
-							.filter__choose-text Symbian
+						input.checkbox-input(type='checkbox', name='os', id='symbian')
+						label(for="symbian").checkbox-label Symbian							
 					li.filter-list-item__inner-list-item
-						label.checkbox-label
-							input.checkbox-input(type='checkbox', name='os', id='custom')
-							.filter__choose-elem-checkbox
-							.filter__choose-text Custom
+						input.checkbox-input(type='checkbox', name='os', id='custom')
+						label(for="custom").checkbox-label Custom							
 				.clear-checkbox 
 					input.clear-checkbox-link(type='reset', value='Сбросить фильтр')

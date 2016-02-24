@@ -14,4 +14,4 @@
 		$(".range-slider__input-end").val($("#slider-range").slider("values", 1));
 
 	});
-})
+});

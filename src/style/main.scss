@@ -1,12 +1,18 @@
 @charset 'UTF-8';
 
-// 1. Configuration
+// 1. Vendors
+@import
+	'vendors/framework';
+
+
+// 2. Configuration
 @import
 	'config/grid',
 	'config/mixins',
+	'config/sprite',
 	'config/variables';
 
-// 2. Base stuff
+// 3. Base stuff
 
 @import
 	'base/normalize',
@@ -14,7 +20,7 @@
 	'base/base',
 	'base/typography';
 
-// 3. Layout
+// 4. Layout
 
 @import
 	'layout/blocks/header',
@@ -22,7 +28,7 @@
 	'layout/blocks/footer',
 	'layout/blocks/main-content';
 
-// 4. Components
+// 5. Components
 
 @import
 	'components/address',
@@ -38,7 +44,3 @@
 	'components/search',
 	'components/socials';
 
-// 5. Vendors
-
-@import
-	'vendors/framework';

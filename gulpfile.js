@@ -97,11 +97,11 @@ gulp.task('sprite', function () {
 		imgName: 'sprite.png',
 		imgPath: '../img/sprites/sprite.png',
 		cssName: '_sprite.scss',
-		algorithm: 'top-down',
+		algorithm: 'alt-diagonal',
 		paddingg: 5
 	}));
 	spriteData.img.pipe(gulp.dest('./dist/img/sprites/'));
-	spriteData.css.pipe(gulp.dest('./src/style/components/'));
+	spriteData.css.pipe(gulp.dest('./src/style/config/'));
 });
 
 
