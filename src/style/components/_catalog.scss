@@ -1,3 +1,7 @@
+.product-catalog {
+	@include clearfix;
+}
+
 .products-item {
 	@include clearfix;
 	width: 233px;
@@ -24,11 +28,11 @@
 	}
 }
 
-// .products__item-inner {
-// 	padding: 17px 22px;
-// 	@include clearfix;
-// 	position:relative;
-// }
+.products__item-inner {
+	padding: 17px 22px;
+	@include clearfix;
+	position:relative;
+}
 
 // .products__left{
 // 	float: left;
