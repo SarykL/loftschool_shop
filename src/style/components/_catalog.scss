@@ -163,35 +163,47 @@
 						background-color: #b5beca;
 						border-radius: 7px;
 					}
-
 				}
-
-
-
-
 			}
-
-// .products__rating-stars{
-// 	display: inline-block;
-// 	vertical-align: middle;
-// 	.products__rating-stars-item{
-// 	display: inline-block;
-// 	vertical-align: middle;
-// 	}
-// 	.products__rating-stars-item_filled{
-
-// 	}
-// 	.products__rating-stars-item_empty{
-
-// 	}
-// }
-
-
-
 		}
 
+		& .products-cart {
 
+			&__price {
+				font-size: 20px;
+				line-height: 20px;
+				font-family: $font-family-semibold;
+				text-align: center;
+				margin-top: 15px;
+				margin-bottom: 10px;
+			}
 
+			&__in-stock {
+				float: left;
+				color: #7f7f7f;
+				font-family: $font-family-bold;
+				line-height: 33px;
+				font-size: 12px;
+				margin-left: 35px;
+			}
+
+			&__btn {
+				width: 103px;
+				vertical-align: middle;
+				line-height: 33px;
+				height: 33px;
+				background: $primary-orange;
+				border-radius: 5px;
+				border: none;
+				outline: none;
+				color: $primary-white;
+				margin-left: 13px;
+
+				&:hover {
+					background: $primary-orange-light;
+				}
+			}
+		}
 	}
 
 
