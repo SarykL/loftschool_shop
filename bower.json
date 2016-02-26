@@ -14,6 +14,7 @@
     "bourbon": "*",
     "jquery-ui": "~1.11.4",
     "jquery.columnizer": "~1.6.2",
-    "neat": "*"
+    "neat": "*",
+    "select2": "~4.0.1"
   }
 }

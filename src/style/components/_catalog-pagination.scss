@@ -1,0 +1,55 @@
+.pagination {
+	float: right;
+	margin-top: 20px;
+
+	&__list {
+		list-style: none;
+		display: inline-block;
+	}
+
+	&__item {
+		width: 26px;
+		height: 26px;
+		border-radius: 3px;
+		display: inline-block;
+		position: relative;
+		background-color: #fbfbfb;
+		border: 1px solid #dee1e4;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+		overflow: hidden;
+
+		&:hover {
+		overflow: hidden;
+			background-color: #e0e0e0;
+		}
+	}
+
+	&__link {
+		position: absolute;
+		top: 4px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		font-size: 12px;
+		font-family: $font-family-bold;
+		color: #7f7f7f;
+
+
+		&_prev {
+			display: block;
+			position: absolute;
+			text-indent: -99999px;
+			@include sprite($arrow-left);
+			top: 8px;
+			left: 8px;
+		}
+
+		&_next {
+			@extend .pagination__link_prev;
+			@include sprite($arrow-right);
+		}
+	}
+}

@@ -1,3 +1,5 @@
+// Range slider
+
 ;$(document).ready(function () {
 	$(function () {
 	$("#slider-range").slider({
