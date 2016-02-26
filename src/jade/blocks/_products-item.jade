@@ -1,36 +1,38 @@
-.products-item.products-item_thumbnails
-	.products__slideshow
-		.products__slideshow-display
-			img(src="img/prod/product-1.jpg", alt="prod desc").products__slideshow-image
-		ul.products__slideshow-list
-			-var imgSrcItemList = ['img/prod/product-1.jpg', 'img/prod/product-2.jpg', 'img/prod/product-3.jpg']
-			each imgSrcItem in imgSrcItemList
-				li.products__slideshow-item
-					a.products__slideshow-link
-						img(src=imgSrcItem, alt="prod desc").products__slideshow-pic
-	.products-vendor-code
-		.products-vendor-code__title Артикул
-		.products-vendor-code__number 589338
-	.products-description
-		.products-description__title Microsoft Lumia 430 RM-1099
-		.products-description__text Смартфон Microsoft Lumia 430 RM-1099 black Куда бы вы ни направлялись, смартфон должен быть надежным спутником. Поэтому у Microsoft Lumia 430 Dual SIM (RM-1099) удобный компактный корпус ...
-		table.products-description-specification
-			- var specItemList = {'Тип SIM-карты':'Micro-SIM', 'Количество SIM-карт':'2','Цвет':'Черный','OS':'Windows Phone','Связь 3G':'Есть','4G (LTE)':'Нет','GPS-модуль':'A-GPS'}
-			each specItemValue, specItemKey in specItemList
-				tr.products-description-specification__row
-					td.spec-key= specItemKey
-					td.spec-value= specItemValue
-		.products-description__rating
-			ul.rating-stars
-				li.rating-stars__item.rating-stars__item_filled
-				li.rating-stars__item.rating-stars__item_filled
-				li.rating-stars__item.rating-stars__item_filled
-				li.rating-stars__item.rating-stars__item_filled
-				li.rating-stars__item.rating-stars__item_empty
-			.rating-amount 4
+.products-item.products-item_row
+	.products__main-info
+		.products__slideshow
+			.products__slideshow-display-wrapper
+				.products__slideshow-display
+					img(src="img/prod/product-1.jpg", alt="prod desc").products__slideshow-image
+				ul.products__slideshow-list
+					-var imgSrcItemList = ['img/prod/product-1.jpg', 'img/prod/product-2.jpg', 'img/prod/product-3.jpg']
+					each imgSrcItem in imgSrcItemList
+						li.products__slideshow-item
+							a.products__slideshow-link
+								img(src=imgSrcItem, alt="prod desc").products__slideshow-pic
+			.products-vendor-code
+				.products-vendor-code__title Артикул
+				.products-vendor-code__number 589338
+		.products-description
+			.products-description__title Microsoft Lumia 430 RM-1099
+			.products-description__text Смартфон Microsoft Lumia 430 RM-1099 black Куда бы вы ни направлялись, смартфон должен быть надежным спутником. Поэтому у Microsoft Lumia 430 Dual SIM (RM-1099) удобный компактный корпус ...
+			table.products-description-specification
+				- var specItemList = {'Тип SIM-карты':'Micro-SIM', 'Количество SIM-карт':'2','Цвет':'Черный','OS':'Windows Phone','Связь 3G':'Есть','4G (LTE)':'Нет','GPS-модуль':'A-GPS'}
+				each specItemValue, specItemKey in specItemList
+					tr.products-description-specification__row
+						td.spec-key= specItemKey
+						td.spec-value= specItemValue
+			.products-description__rating
+				ul.rating-stars
+					li.rating-stars__item.rating-stars__item_filled
+					li.rating-stars__item.rating-stars__item_filled
+					li.rating-stars__item.rating-stars__item_filled
+					li.rating-stars__item.rating-stars__item_filled
+					li.rating-stars__item.rating-stars__item_empty
+				.rating-amount 4
 	.products-cart
 		.products-cart__price 10 990
-		.products-cart__in-stock В наличии
 		button.products-cart__btn В корзину
+		.products-cart__in-stock В наличии
 
 

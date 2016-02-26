@@ -2,7 +2,7 @@
 
 // 1. Vendors
 @import
-	'vendors/framework';
+	'vendors/jqueryui';
 
 
 // 2. Configuration
@@ -35,6 +35,7 @@
 	'components/buttons',
 	'components/breadcrumbs',
 	'components/catalog',
+	'components/catalog-pagination',
 	'components/catalog-sorting',
 	'components/filter',
 	'components/info-block',

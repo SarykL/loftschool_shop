@@ -28,15 +28,10 @@
 				&:after {
 					content: "";
 					display: inline-block;
-					background: url(../img/arrow.png);
-					background-repeat: no-repeat;
-					width: 18px;
-					height: 11px;
+					@include sprite($arrow);
 					position: absolute;
 					right: 0px;
-					top: 50%;
-					transition: 0.2s;
-					transform: translateY(-50%);
+					top: 44%;
 				}
 			}
 
@@ -198,7 +193,9 @@
 
 .range-slider__text {
 	font-size: 14px;
+	font-family: $font-family-regular;
 	margin-right: 14px;
+	margin-left: 10px;
 }
 
 .range-slider__input {
@@ -213,7 +210,7 @@
 }
 
 .slider-range {
-	width: 260px;
+	width: 270px;
 	margin: 15px 0 35px 15px;
 	display: block;
 }
@@ -237,35 +234,25 @@
 }
 
 .ui-slider-horizontal .ui-slider-handle {
-	top: 1px;
+	top: 3px;
+	@include sprite($carrete);
+	border: 0 none;
 	margin-left: -4px;
-	width: 8px;
-	height: 14px;
+	border-radius: 0;
 	cursor: pointer;
+	outline: none;
+	
 }
 .ui-slider-horizontal .ui-slider-handle:focus {
 	border: none;
 	outline: none;
 }
 
-.ui-state-default,
-.ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default {
-	@include sprite($carrete);
-	font-weight: normal;
-	width: 8px;
-	height: 16px;
-	border: none;
-}
-
-
-
-
 
 .color-box-cont {
 	margin-top: 6px;
 	width: 236px;
-	margin-left: 27px;
+	margin-left: 47px;
 	@include clearfix;
 }
 
@@ -288,16 +275,3 @@
 	}
 }
 
-/* 
-.filter-content {
-  height: 0px;
-  overflow: hidden;
-}
-.filter-input:checked ~ .filter-title:after {
-
-  transform: rotate(180deg);
-  transition: 0.2s;
-}
-.filter-input:checked ~ .filter-content {
-  height: auto;
-} */

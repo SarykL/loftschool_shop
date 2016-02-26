@@ -1,9 +1,10 @@
 .catalog-sorting {
 	border: 1px solid #dee2e5;
 	background: #e2ecef;
+	// vertical-align: baseline;
 	border-radius: 5px;
 	@include clearfix;
-	line-height: 53px;
+	line-height: 50px;
 	margin-bottom: 40px;
 	&-form {
 		float: left;
@@ -37,11 +38,14 @@
 	float: right;
 	&__list{
 		float: right;
+		line-height: 10px;
+		border: none;
 	}
 	&-item {
 		display: inline-block;
 		position: relative;
 		height: 50px;
+		border-left: 1px solid #dee1e4;
 		width: 50px;
 		text-align: center;
 	}
@@ -52,6 +56,21 @@
 		margin-right: 17px;
 	}
 	&-link {
+		text-indent: -9999px;
+		display: block;
+		position: absolute;
+		top: 18px;
+		left: 17px;
 
+		&_rows {
+			@include sprite($row-view);
+		}
+
+		&_list{
+			@include sprite($list-view);
+		}
+		&_thumbnails {
+			@include sprite($thumbnail-view);
+		}
 	}
 }

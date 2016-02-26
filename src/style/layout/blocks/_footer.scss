@@ -3,6 +3,12 @@
 	@include clearfix;
 	min-width: 1100px;
 	background-image: url("../img/footer-bg.png");
+	
+	&-social {
+		@include clearfix;
+		
+	}
+
 	&_container {
 		@include clearfix;
 		@extend .container;

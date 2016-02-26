@@ -3,19 +3,37 @@
 
 .address {
 	float: right;
+	position: relative;
 	&__location {
 		font-style: normal !important;
 		font-size: 14px;
 		line-height: 24px;
 		font-family: $font-family-regular;
 		display: inline-block;
+
+		&:before {
+			content: '';
+			@include sprite($map-pin);
+			position: absolute;
+			top: 31px;
+			left: -19px;
+		}
 	}
 	&__phone {
 		font-size: 18px;
 		font-family: $font-family-semibold;
 		line-height: 24px;
-		margin-left: 106px;
+		margin-left: 112px;
+		margin-right: -3px;
 		text-decoration: none;
 		color: $link-color;
+
+		&:before {
+			content: '';
+			@include sprite($telephone);
+			position: absolute;
+			top: 30px;
+			left: 263px;
+		}
 	}
 }

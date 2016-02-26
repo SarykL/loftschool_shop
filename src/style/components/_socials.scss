@@ -5,12 +5,75 @@
 	list-style: none;
 }
 
+.footer__social {
+	float: right;
+	list-style: none;
+}
+
 .social {
 	&__item {
 		display: inline-block;
+		position: relative;
+		line-height: 20px;
+
+		&_light {
+			margin-left: 13px;
+		}
 	}
+
 	&__link {
 		display: block;
 		text-indent: -99999px;
+		margin-right: 10px;
+
+		&_dark {
+
+			&-fb {
+				@include sprite($fb-dark);
+
+				&:hover {
+					@include sprite($fb-dark-hover);
+				}
+			}
+
+			&-vk {
+				@include sprite($vk-dark);
+				&:hover {
+					@include sprite($vk-dark-hover);
+				}
+			}
+
+			&-tw {
+				@include sprite($tw-dark);
+				&:hover {
+					@include sprite($tw-dark-hover);
+				}
+			}
+		}
+
+		&_light {
+
+			&-fb {
+				@include sprite($fb-white);
+
+				&:hover {
+					@include sprite($fb-white-hover);
+				}
+			}
+
+			&-vk {
+				@include sprite($vk-white);
+				&:hover {
+					@include sprite($vk-white-hover);
+				}
+			}
+
+			&-tw {
+				@include sprite($tw-white);
+				&:hover {
+					@include sprite($tw-white-hover);
+				}
+			}
+		}
 	}
 }

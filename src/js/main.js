@@ -3,3 +3,5 @@
 //= partials/_slider.js
 
 //= partials/_columnizer.js
+
+//= partials/_view.js
