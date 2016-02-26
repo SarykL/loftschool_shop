@@ -1,20 +1,18 @@
 {
-  "name": "QSM",
+  "name": "'Shop' Loftschool",
   "version": "1.1.0",
   "homepage": "",
   "authors": [
     ""
   ],
-  "description": "This boilerplate for html+css markup",
+  "description": "Loftschool project #2 'Shop'",
   "moduleType": [
     "globals"
   ],
   "license": "MIT",
   "dependencies": {
-    "bourbon": "*",
     "jquery-ui": "~1.11.4",
     "jquery.columnizer": "~1.6.2",
-    "neat": "*",
     "select2": "~4.0.1"
   }
 }
