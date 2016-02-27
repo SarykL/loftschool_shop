@@ -43,8 +43,8 @@
 			ul.color-box-cont.filter-list-item__inner-list
 				- var colors = ['#ffffff','#cccccc','#000000','#0a3153','#ff1800','#fff343','#fb914a','#92c37c','#40a6ff','#9870ad','#dc78ad','#7f401d']
 				each color in colors
-					li.color-box-item
-						a(href="#" style="background: "+ color).color-box
+					li(style="background: "+ color).color-box-item
+						a(href="#").color-box
 		li.filter-list-item
 			a(href="#").filter-list-item__trigger Операционные системы
 			form.filter-list-item__inner-list

@@ -11,6 +11,7 @@ var gulp = require('gulp'),
 	imagemin = require('gulp-imagemin'),
 	spritesmith = require('gulp.spritesmith'),
 	rimraf = require('rimraf'),
+	uglify = require('gulp-uglify'),
 	pngquant = require('imagemin-pngquant'),
 	browserSync = require('browser-sync'),
 	reload = browserSync.reload;
@@ -135,6 +136,7 @@ gulp.task('fonts:build', function() {
 gulp.task('js:build', function() {
 	gulp.src(path.src.js)
 		.pipe(rigger())
+		.pipe(uglify())
 		.pipe(gulp.dest(path.build.js))
 		.pipe(reload({stream: true}));
 });

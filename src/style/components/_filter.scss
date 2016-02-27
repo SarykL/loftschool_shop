@@ -272,20 +272,27 @@
 
 
 .color-box {
-	width: 37px;
-	height: 37px;
-	border: 1px solid #dee1e4;
-	float: left;
-	margin: 0 22px 22px 0;
-	cursor: pointer;
-	transition: 0.1s;
+
 	&-item {
+		width: 37px;
+		height: 37px;
+		border: 1px solid #dee1e4;
+		float: left;
+		margin: 0 22px 22px 0;
+		cursor: pointer;
+		transition: 0.1s;
 		float: left;
 		list-style-type: none;
+
+		&.checked {
+			border: 2px solid $primary-orange;
+		}
+
+		&:hover {
+			box-shadow: $primary-orange-light 0 0 6px 2px;
+			transition: 0.1s;
+		}
 	}
-	&:hover {
-		box-shadow: $primary-orange 0 0 2px 2px;
-		transition: 0.1s;
-	}
+
 }
 

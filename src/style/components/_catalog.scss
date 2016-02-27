@@ -220,13 +220,14 @@
 		&__btn {
 			width: 103px;
 			vertical-align: middle;
-			line-height: 33px;
+			font-size: 14px;
+			line-height: 20px;
 			height: 33px;
 			background: $primary-orange;
 			border-radius: 5px;
 			border: none;
 			outline: none;
-			font-family: $font-family-regular;
+			font-family: $font-family-bold;
 			color: $primary-white;
 			margin-left: 13px;
 
@@ -447,14 +448,15 @@
 		&__btn {
 			width: 103px;
 			vertical-align: middle;
-			line-height: 33px;
+			line-height: 20px;
+			font-size: 14px;
 			height: 33px;
 			background: $primary-orange;
 			border-radius: 5px;
 			border: none;
 			outline: none;
 			float: right;
-			font-family: $font-family-regular;
+			font-family: $font-family-bold;
 			color: $primary-white;
 			margin-left: 13px;
 
@@ -586,12 +588,14 @@
 			width: 103px;
 			vertical-align: middle;
 			height: 33px;
+			line-height: 20px;
+			font-size: 14px;
 			background: $primary-orange;
 			border-radius: 5px;
 			border: none;
 			outline: none;
 			float: right;
-			font-family: $font-family-regular;
+			font-family: $font-family-bold;
 			color: $primary-white;
 			margin-left: 13px;
 			margin-top: -5px;
