@@ -247,8 +247,9 @@
 	background: #fbfbfb;
 	border: 1px solid #dee1e4;
 	display: inline-block;
+	width: 740px;
 	position: relative;
-	padding: 15px;
+	padding: 15px 15px 15px 5px;
 	margin: -4px;
 
 	&:hover {
@@ -361,6 +362,7 @@
 		&__text {
 			font-size: 14px;
 			font-family: $font-family-regular;
+			width: 375px;
 		}
 
 		&__rating {
@@ -405,9 +407,12 @@
 	}
 
 	& .products-cart {
-		position: relative;
-		width: 120px;
-		float: right;
+		position: absolute;
+		top: 20px;
+		bottom: 20px;
+		right: 10px;
+		width: 140px;
+		// float: right;
 		border-left: 1px solid #dee1e4;
 
 		&__price {
@@ -417,7 +422,7 @@
 			font-family: $font-family-semibold;
 			text-align: center;
 			margin-top: 15px;
-			margin-bottom: 130px;
+			// margin-bottom: 130px;
 
 			&:after {
 				content: '';
@@ -435,13 +440,16 @@
 			line-height: 33px;
 			font-size: 12px;
 			margin-left: 35px;
+			position: absolute;
+			bottom: -10px;
+			right: 5px;
 
 			&:before {
 				content: '';
 				@include sprite($stock-indicator);
 				position: absolute;
-				top: 211px;
-				right: 76px;
+				top: 13px;
+				right: 74px;
 			}
 		}
 
@@ -459,6 +467,9 @@
 			font-family: $font-family-bold;
 			color: $primary-white;
 			margin-left: 13px;
+			position: absolute;
+			bottom: 22px;
+			right: 5px;
 
 			&:hover {
 				background: $primary-orange-light;
